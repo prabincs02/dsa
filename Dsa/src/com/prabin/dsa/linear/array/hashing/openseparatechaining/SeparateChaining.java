@@ -1,7 +1,6 @@
-package com.prabin.dsa.linear.array.hashing;
+package com.prabin.dsa.linear.array.hashing.openseparatechaining;
 
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

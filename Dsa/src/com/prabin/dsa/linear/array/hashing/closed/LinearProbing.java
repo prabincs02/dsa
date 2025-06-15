@@ -1,4 +1,4 @@
-package com.prabin.dsa.linear.array.hashing;
+package com.prabin.dsa.linear.array.hashing.closed;
 
 import java.util.Arrays;
 
