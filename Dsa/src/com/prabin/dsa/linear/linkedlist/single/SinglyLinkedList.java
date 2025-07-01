@@ -45,11 +45,11 @@ public class SinglyLinkedList {
         sl.insert(5);
         sl.insert(6);
         sl.insert(7);
-        sl.insert(8);
         sl.insert(9);
-        sl.insert(10);
+        sl.insert(9);
+        sl.insert(2);
         sl.insert(11);
-        sl.insert(12);
+        sl.insert(87);
         sl.insert(13);
 
 

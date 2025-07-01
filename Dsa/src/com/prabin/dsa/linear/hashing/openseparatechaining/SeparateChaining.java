@@ -1,4 +1,4 @@
-package com.prabin.dsa.linear.array.hashing.openseparatechaining;
+package com.prabin.dsa.linear.hashing.openseparatechaining;
 
 
 import java.util.LinkedList;

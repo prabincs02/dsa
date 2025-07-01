@@ -1,4 +1,4 @@
-package com.prabin.dsa.linear.array.hashing.closed;
+package com.prabin.dsa.linear.hashing.closed;
 
 import java.util.Arrays;
 
@@ -12,6 +12,7 @@ class lp{
 
     }
     int getindex(int num){
+
         return num%size;
     }
 
@@ -32,6 +33,8 @@ class lp{
         }
     }
 }
+
+
 
 public class LinearProbing {
     public static void main(String[] args) {
