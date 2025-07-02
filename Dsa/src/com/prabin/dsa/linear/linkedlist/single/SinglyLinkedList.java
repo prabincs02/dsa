@@ -127,8 +127,16 @@ public class SinglyLinkedList {
         sl.deleteatany(5);
         sl.display();
 
+        System.out.println();
+        System.out.println("reverse");
+        sl.reverse();
+        sl.display();
 
+    }
 
+    private void reverse() {
+        reverseLinkedList r1 = new  reverseLinkedList();
+        head = r1.reverselist(head);
     }
 
     private void deleteatany(int i) {
