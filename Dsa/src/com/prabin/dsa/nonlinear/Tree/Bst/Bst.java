@@ -46,6 +46,19 @@ public class Bst {
         }
     }
 
+    public int getHeight() {
+        Height heightCalculator = new Height();
+        return heightCalculator.computeHeight(root);
+    }
+
+
+//    public int height(node root){
+//        if(root == null){
+//            return -1;
+//        }
+//        return 1+Math.max(height(root.left),height(root.right));
+//    }
+
 
     public static void main(String[] args) {
         Bst bst = new Bst();
@@ -56,5 +69,8 @@ public class Bst {
         bst.insert(1);
 
         bst.inorder(bst.root);
+        System.out.println();
+        int h = bst.getHeight();;
+        System.out.println(h);
     }
 }
