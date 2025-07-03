@@ -58,10 +58,10 @@ public class Bst {
         }
 
         if(n1<root.key && n2 <root.key){
-            ancestor(root.left,n1,n2);
+           return ancestor(root.left,n1,n2);
         }
         else if(n1>root.key && n2>root.key){
-            ancestor(root.right,n1,n2);
+           return ancestor(root.right,n1,n2);
         }
         else{
             return root;
@@ -83,18 +83,18 @@ public class Bst {
         Bst bst = new Bst();
         bst.insert(20);
         bst.insert(15);
+        bst.insert(25);
         bst.insert(14);
-        bst.insert(13);
-        bst.insert(12);
-        bst.insert(11);
-        bst.insert(10);
+        bst.insert(26);
+        bst.insert(14);
+        bst.insert(16);
 
         bst.inorder(bst.root);
         System.out.println();
         int h = bst.getHeight();;
         System.out.println(h);
         System.out.println();
-       node res = bst.ancestor(bst.root, 10,11);
+       node res = bst.ancestor(bst.root, 14,24);
 
         System.out.println(res.key);
     }
