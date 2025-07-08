@@ -32,7 +32,7 @@ public class Bst {
     public void inorder(node root) {
         if (root != null) {
             inorder(root.left);
-            System.out.println(root.key);
+            System.out.print(root.key+" ");
             inorder(root.right);
         }
     }
@@ -97,5 +97,39 @@ public class Bst {
        node res = bst.ancestor(bst.root, 14,24);
 
         System.out.println(res.key);
+
+        bst.delete(bst.root,20);
+        System.out.println();
+        bst.inorder(bst.root);
+
     }
+
+    private node  delete(node root,int val) {
+        if(root==null){
+            return null;
+        }
+
+        if(val<root.key){
+            root.left =delete(root.left,val);
+        }
+        else if(val>root.key){
+            root.right=delete(root.right,val);
+        }
+        else{
+            if(root.left==null)return root.right;
+            if(root.right==null)return root.left;
+
+            root.key =min(root.right);
+            delete(root.right,root.key);
+        }
+return root;
+    }
+
+    int min(node root){
+        if(root.left!=null){
+            root=root.left;
+        }
+        return root.key;
+    }
+
 }
